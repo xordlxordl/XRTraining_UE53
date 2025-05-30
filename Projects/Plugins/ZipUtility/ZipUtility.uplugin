@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.1.1",
+	"FriendlyName": "ZipUtility",
+	"Description": "",
+	"Category": "Utility",
+	"CreatedBy": "Getnamo",
+	"CreatedByURL": "http://www.getnamo.com",
+	"DocsURL": "https://github.com/getnamo/ZipUtility-ue4",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"Modules": [
+		{
+			"Name": "ZipUtility",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}

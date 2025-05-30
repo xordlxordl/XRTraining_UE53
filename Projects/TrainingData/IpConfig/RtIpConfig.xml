@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IpSetting>
+  <!-- <ServerIp>192.168.10.18</ServerIp> -->
+  <!-- <ServerIp>192.168.0.212</ServerIp>
+  <TCPSocketIp>192.168.0.20</TCPSocketIp>
+  <UDPSocketIp>192.168.0.20</UDPSocketIp> -->
+  <ServerIp>192.168.0.34</ServerIp>
+  <TCPSocketIp>192.168.0.34</TCPSocketIp>
+  <UDPSocketIp>192.168.0.34</UDPSocketIp>
+  <WebMainUrl>http://192.168.0.20/ARTS/main.aspx</WebMainUrl>
+  <WebDownUrl>http://192.168.0.20/ARTS/download.aspx</WebDownUrl>
+  <WebRepUpUrl>http://192.168.0.20/ARTS/upload_voice.aspx</WebRepUpUrl>
+  <WebRepDnUrl>http://192.168.0.20/ARTS/download_voice.aspx</WebRepDnUrl>
+  <WebLogUrl>http://192.168.0.20/ARTS/logmain.aspx</WebLogUrl>
+  
+  <NationCode>82</NationCode>
+  <!-- <ServerIp>192.168.10.36</ServerIp> -->
+  <!-- NationCode Eng 1, Kor 82, Jpn 81, Chi 86 -->
+</IpSetting>
+

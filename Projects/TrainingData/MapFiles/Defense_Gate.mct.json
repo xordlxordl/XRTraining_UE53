@@ -1,0 +1,6974 @@
+{
+	"mapSize":
+	{
+		"x": 30,
+		"y": 30
+	},
+	"trainingRangeStart":
+	{
+		"x": 0,
+		"y": 0
+	},
+	"trainingRangeSize":
+	{
+		"x": 30,
+		"y": 30
+	},
+	"controlVolumePos":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"controlVolumeExtent":
+	{
+		"x": 0,
+		"y": 0,
+		"z": 0
+	},
+	"baseMapPath": "",
+	"bpCharacter": "",
+	"bpWall": "",
+	"bpTile": "",
+	"bpProps": "",
+	"bpEquips": "",
+	"bpPlayerStart": "",
+	"bpWayPoint": "",
+	"bpBoundary": "",
+	"bpRsGame_Char": "",
+	"bpRsGame_Wall": "",
+	"bpRsGame_Tile": "",
+	"bpRsGame_Props": "",
+	"bpRsGame_PlayerStart": "",
+	"bpRsGame_WayPoint": "",
+	"bpRsGame_Area": "",
+	"bpRsGame_Equip": "",
+	"propsDatas": [
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_3",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1565,
+					"y": -1281.9779968261719,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_4",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1565,
+					"y": -1123,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_5",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1565,
+					"y": -624,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Gate_2",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Gate",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1580,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Gate_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Gate",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1206.2785024642944,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_6",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1565,
+					"y": -124,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 90,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Wire_4",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Wire",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1570,
+					"y": -1096,
+					"z": 289
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Wire_5",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Wire",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1570,
+					"y": -600,
+					"z": 289
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Wire_6",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Wire",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1570,
+					"y": -103,
+					"z": 289
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_9",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1101.5148391723633,
+					"y": 215,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Gate_3",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Gate",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -28.165573120117188,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "AirForce_Sign_1",
+				"templateTag": "Prop",
+				"templateModelKey": "AirForce_Sign",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1204,
+					"y": 276,
+					"z": 155
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Gate_4",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Gate",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -426.28890314719064,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -400,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_2",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -600,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_3",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 0,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_4",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 200,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_5",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 400,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_6",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 600,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Barrier_7",
+				"templateTag": "Prop",
+				"templateModelKey": "Barrier",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 800,
+					"y": -800,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "MetalGate_Group_1",
+				"templateTag": "Prop",
+				"templateModelKey": "MetalGate_Group",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 465,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Grating_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Grating",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1402,
+					"y": 271,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "MetalGate_1",
+				"templateTag": "Prop",
+				"templateModelKey": "MetalGate",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 265,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Grating_2",
+				"templateTag": "Prop",
+				"templateModelKey": "Grating",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1402,
+					"y": 271,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Grating_3",
+				"templateTag": "Prop",
+				"templateModelKey": "Grating",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -228,
+					"y": 271,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Grating_4",
+				"templateTag": "Prop",
+				"templateModelKey": "Grating",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -228,
+					"y": 127,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_10",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -751,
+					"y": 215,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "GuardPost_1",
+				"templateTag": "Prop",
+				"templateModelKey": "GuardPost",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1300,
+					"y": -100,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_15",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1565,
+					"y": 0.317657470703125,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Pillar_2",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Pillar",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1424.5960083007812,
+					"y": 200,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "GuardPost_Top_Light_1",
+				"templateTag": "Prop",
+				"templateModelKey": "GuardPost_Top_Light",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1137,
+					"y": -500,
+					"z": 400
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "GuardPost_Top_Light_2",
+				"templateTag": "Prop",
+				"templateModelKey": "GuardPost_Top_Light",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1137,
+					"y": 13,
+					"z": 400
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": -90,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Wire_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Wire",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1570,
+					"y": -1321,
+					"z": 289
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1099,
+					"y": 184,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_2",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -750.82720947265625,
+					"y": 184,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Wire_2",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Wire",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1061,
+					"y": 199,
+					"z": 289
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 90,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wall_Wire_3",
+				"templateTag": "Prop",
+				"templateModelKey": "Wall_Wire",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -746,
+					"y": 199,
+					"z": 289
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 90,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wire_Fence_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Wire_Fence",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": -22,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": -90,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wire_Fence_6",
+				"templateTag": "Prop",
+				"templateModelKey": "Wire_Fence",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": -321,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wire_Fence_7",
+				"templateTag": "Prop",
+				"templateModelKey": "Wire_Fence",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": -625,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wire_Fence_8",
+				"templateTag": "Prop",
+				"templateModelKey": "Wire_Fence",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": -922,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Wire_Fence_9",
+				"templateTag": "Prop",
+				"templateModelKey": "Wire_Fence",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": -1225,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": -0,
+					"yaw": -90,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "K200A1_Open_1",
+				"templateTag": "Prop",
+				"templateModelKey": "K200A1_Open",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1200,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		},
+		{
+			"propBasic":
+			{
+				"templateName": "Bell_Door_1",
+				"templateTag": "Prop",
+				"templateModelKey": "Bell_Door",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1125,
+					"y": -173,
+					"z": 114
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"propCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"propFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"propCollision": [],
+			"propEffect": [],
+			"propSound": [],
+			"propSpot": [],
+			"propPoint": [],
+			"propEquip": []
+		}
+	],
+	"wallsDatas": [],
+	"tilesDatas": [
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_1",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -900,
+					"y": 900,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_2",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 300,
+					"y": 900,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_3",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 900,
+					"y": 900,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_4",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 900,
+					"y": -300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_5",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1000,
+					"y": -900,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_6",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 300,
+					"y": -900,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_7",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -900,
+					"y": -900,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_1",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1601,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_2",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1444,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_3",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1287,
+					"y": 200,
+					"z": 0.10000000000000001
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_4",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1129.9768867492676,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_5",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 974,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_6",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 816,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_7",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 659,
+					"y": 200,
+					"z": 0.10000000000000001
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_8",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 504,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_9",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 347,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_10",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 190,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_11",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 34,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_12",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -122,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_13",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -279,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_14",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -436,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_15",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -594,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_16",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -750,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_17",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -907,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_18",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1064,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_19",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1221,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Door_Cylinder_20",
+				"templateTag": "Tile",
+				"templateModelKey": "Door_Cylinder",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1378,
+					"y": 200,
+					"z": 0.099999999999999645
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_8",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -900,
+					"y": -300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_9",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 300,
+					"y": -300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		},
+		{
+			"tileBasic":
+			{
+				"templateName": "Asphalt_Road_1",
+				"templateTag": "Tile",
+				"templateModelKey": "Asphalt_Road",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -109.451416015625,
+					"y": 1891.4268474578857,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"tileCombution":
+			{
+				"ability": 1,
+				"ignitionPoint": 0,
+				"burningTime": 0,
+				"maxTemperature": 0,
+				"burningKind": 3,
+				"fireMaxSize": 0,
+				"smokeColor": 0,
+				"smokeSize": 0,
+				"burningModelName": "",
+				"burnedModelName": "",
+				"burningModelPath": "",
+				"burnedModelPath": ""
+			},
+			"tileFunction":
+			{
+				"animationName": "",
+				"animationPath": "",
+				"effectName": "",
+				"effectPath": "",
+				"effectPos":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"soundName": "",
+				"soundPath": "",
+				"operModelName": [],
+				"operModelPath": [],
+				"operAniName": [],
+				"operAniPath": [],
+				"operEftName": [],
+				"operEftPath": [],
+				"operEftPos": [],
+				"operSoundName": [],
+				"operSoundPath": []
+			},
+			"tileCollision": [],
+			"tileEffect": [],
+			"tileSound": [],
+			"tileSpot": [],
+			"tilePoint": []
+		}
+	],
+	"equipsDatas": [
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_1",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 200,
+					"y": 0,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_2",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -600,
+					"y": 0,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_3",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 600,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_4",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 400,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K15_1",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K15",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 200,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K15_2",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K15",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 0,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_5",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -200,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_6",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -400,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_7",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -600,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "K2C1_8",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "K2C1",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -800,
+					"y": -1300,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "Knife_1",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "Knife",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1400,
+					"y": 3600,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"weaponBasic":
+			{
+				"templateName": "Knife_2",
+				"templateTag": "Equip_Prop",
+				"templateModelKey": "Knife",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": 3500,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			},
+			"socketIndex": 0,
+			"weaponCollision": [],
+			"weaponEffect": [],
+			"weaponSound": [],
+			"shotSpeed": 0,
+			"shotFirePos":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		}
+	],
+	"areasDatas": [],
+	"characterDatas": [
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Sentry_1",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Sentry",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 200,
+					"y": -100,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Sentry_2",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Sentry",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -600,
+					"y": -100,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_1",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 600,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_2",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 400,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_3",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 200,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_4",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 0,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_5",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -200,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_6",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -400,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Stranger_One_1",
+				"templateTag": "Character",
+				"templateModelKey": "Stranger_One",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1400,
+					"y": 3500,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_7",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -600,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Soldier_Mobile_8",
+				"templateTag": "Character",
+				"templateModelKey": "Soldier_Mobile",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -800,
+					"y": -1400,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"basicInfo":
+			{
+				"templateName": "Stranger_Two_1",
+				"templateTag": "Character",
+				"templateModelKey": "Stranger_Two",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1500,
+					"y": 3500,
+					"z": 87.000099182128906
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 180,
+					"roll": 0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		}
+	],
+	"playerSpawnDatas": [],
+	"wayPointDatas": [
+		{
+			"wayPointBasic":
+			{
+				"templateName": "Stranger_One_wp1_1",
+				"templateTag": "waypoint tag",
+				"templateModelKey": "WayPoint",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 1404.8220252990723,
+					"y": 1541.7813720703125,
+					"z": 11
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"wayPointBasic":
+			{
+				"templateName": "Stranger_One_wp1_2",
+				"templateTag": "waypoint tag",
+				"templateModelKey": "WayPoint",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 795,
+					"y": 294,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"wayPointBasic":
+			{
+				"templateName": "Stranger_Two_wp1_1",
+				"templateTag": "waypoint tag",
+				"templateModelKey": "WayPoint",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -1450,
+					"y": 1550,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"wayPointBasic":
+			{
+				"templateName": "Stranger_Two_wp1_2",
+				"templateTag": "waypoint tag",
+				"templateModelKey": "WayPoint",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 150,
+					"y": 294,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		}
+	],
+	"invisibleWallDatas": [],
+	"triggerBoxDatas": [
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_1",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 800,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_2",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 700,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_3",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 600,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_4",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 500,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_5",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 400,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_6",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 300,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_7",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 200,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_8",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 100,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_9",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": 0,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_10",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -100,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_11",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -400,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_12",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -500,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_13",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -600,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		},
+		{
+			"triggerBoxBasic":
+			{
+				"templateName": "Cover_14",
+				"templateTag": "TriggerBox tag",
+				"templateModelKey": "TriggerBox",
+				"templateMeshPath": "",
+				"templateMatPath": "",
+				"templateDurability": 100,
+				"templateLocation":
+				{
+					"x": -700,
+					"y": -962,
+					"z": 0
+				},
+				"templateRotation":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": -0
+				},
+				"templateScale":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"hierachyName": ""
+			}
+		}
+	]
+}

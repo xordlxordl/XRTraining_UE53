@@ -1,0 +1,39 @@
+{
+	"scenarioNameTId": "",
+	"scenarioSummaryTId": "",
+	"scenarioGoalTId": "",
+	"scenarioName": "test2",
+	"scenarioSummary": "test2",
+	"scenarioGoal": "test2",
+	"trainingTime": 0,
+	"playerCount": 0,
+	"mctFileName": "military.mct.json",
+	"mctFilePath": ".",
+	"playerRoleTypeMap":
+	{
+	},
+	"eventList": [
+		{
+			"eventNameTId": "test2",
+			"eventName": "test2",
+			"eventCategory": "",
+			"eventHandleType": "ENone",
+			"ownerId": "",
+			"targetId": "",
+			"eventOccurConditionList": [],
+			"eventProcessList": [],
+			"preconditionEventNameTIds": ""
+		}
+	],
+	"playerGroupList": [
+		{
+			"playerGroupId": "test2",
+			"playerGroupName": "test2",
+			"playerType": "EPC",
+			"groupInfoText": "test2",
+			"playerList": []
+		}
+	],
+	"menuSetList": [],
+	"varialbeList": []
+}
