@@ -332,7 +332,6 @@ FReply URt_Training_Viewer::NativeOnMouseWheel(const FGeometry& InGeometry, cons
 			PC->ZoomCamera(ScrollDelta);
 		}
 	}
-
 	return FReply::Handled();
 }
 
@@ -384,8 +383,6 @@ void URt_Training_Viewer::RepeatingFunction()
 					    currentTime = FString::Printf(TEXT(" %d : %d "), currentMinute, currentSecond);
 
 					    TB_TimeLimit_var->SetText(FText::FromString(currentTime));
-
-
 	  		     		//GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, currentTime);
 					}
 				}
@@ -491,7 +488,6 @@ void URt_Training_Viewer::SendPacketToScenarioServerForStart(int32 TID)
 	if (netmgr) {
 		netmgr->SendPacket_TrainingStart(TID);
 	}
-
 }
 
 void URt_Training_Viewer::StartTrainingScenario(int32 TID)
@@ -650,7 +646,9 @@ void URt_Training_Viewer::Client_Ready_For_Training_Delegate(int32 UID, bool IsR
 			{
 				UE_LOG(LogTemp, Log, TEXT("Player Info: %s"), *RtPlayerState->GetPlayerName());
 				FRtDeviceInfo info = RtPlayerState->Get_PlayerInfo();
-				RtPlayerState->Server_Change_ReadyState(info);
+				if (info.StatusInTraining == EStatusInTraining::Default)
+					continue;
+				HandleDeviceInfoChanged(info.PlayerId, info);
 			}
 		}
 	}
@@ -667,8 +665,6 @@ bool URt_Training_Viewer::VerifyReady(int32 playerId, const TArray<FRtDeviceInfo
 		if (it.StatusInTraining != EStatusInTraining::Default)
 			count++;
 		
-		//if (it.Ready) 
-		//	ready++;
 		const int32 Loop = IsVR(playerId) ? 3 : 2;			// if VR's not on, skip calibration check
 		bool Ready = true;
 		for (int i = 0; i < Loop; ++i)
