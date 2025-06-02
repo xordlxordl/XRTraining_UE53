@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="upload_sct.aspx.cs" Inherits="ARWeb.upload_sct" %>

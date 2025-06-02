@@ -1,0 +1,274 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9E1DE95-1E47-497F-B16E-09E09ABD7584}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ARWeb</RootNamespace>
+    <AssemblyName>ARWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Json">
+      <HintPath>packages\System.Net.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ARTS\download.aspx" />
+    <Content Include="ARTS\download_replay.aspx" />
+    <Content Include="ARTS\download_voice.aspx" />
+    <Content Include="ARTS\logmain.aspx" />
+    <Content Include="ARTS\main.aspx" />
+    <Content Include="ARTS\upload_effect.aspx" />
+    <Content Include="ARTS\upload_fbx.aspx" />
+    <Content Include="ARTS\upload_fbxanim.aspx" />
+    <Content Include="ARTS\upload_mct.aspx" />
+    <Content Include="ARTS\upload_png.aspx" />
+    <Content Include="ARTS\upload_replay.aspx" />
+    <Content Include="ARTS\upload_tct.aspx" />
+    <Content Include="ARTS\upload_voice.aspx" />
+    <Content Include="ARTS\upload_wav.aspx" />
+    <Content Include="ARTS\upload_wct.aspx" />
+    <Content Include="ARTS\version.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="ARTS\upload_sct.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ARTS\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\download_replay.aspx.cs">
+      <DependentUpon>download_replay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\download_voice.aspx.cs">
+      <DependentUpon>download_voice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\logmain.aspx.cs">
+      <DependentUpon>logmain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_effect.aspx.cs">
+      <DependentUpon>upload_effect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_fbxanim.aspx.cs">
+      <DependentUpon>upload_fbxanim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_replay.aspx.cs">
+      <DependentUpon>upload_replay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_voice.aspx.cs">
+      <DependentUpon>upload_voice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\version.aspx.cs">
+      <DependentUpon>version.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\version.aspx.designer.cs">
+      <DependentUpon>version.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logpacket\LOGBADFIRE.cs" />
+    <Compile Include="logpacket\LOGBIND.cs" />
+    <Compile Include="logpacket\LOGBREIFSITUATION.cs" />
+    <Compile Include="logpacket\LOGCALL.cs" />
+    <Compile Include="logpacket\LOGCOMMANDMOVE.cs" />
+    <Compile Include="logpacket\LOGDISTANCE.cs" />
+    <Compile Include="logpacket\LOGEOD.cs" />
+    <Compile Include="logpacket\LOGMOTION.cs" />
+    <Compile Include="logpacket\LOGOBJECT.cs" />
+    <Compile Include="logpacket\LOGTRGUN.cs" />
+    <Compile Include="logpacket\LOGTRHMD.cs" />
+    <Compile Include="packet\CheckFile.cs" />
+    <Compile Include="packet\Default.cs" />
+    <Compile Include="logpacket\DefaultLog.cs" />
+    <Compile Include="packet\EnterUser.cs" />
+    <Compile Include="packet\Finish.cs" />
+    <Compile Include="packet\GetAllFileList.cs" />
+    <Compile Include="packet\GetEffList.cs" />
+    <Compile Include="packet\GetFBXAnimList.cs" />
+    <Compile Include="packet\GetFBXList.cs" />
+    <Compile Include="packet\GetMachineList.cs" />
+    <Compile Include="packet\GetMCTList.cs" />
+    <Compile Include="packet\GetMotionLog.cs" />
+    <Compile Include="packet\GetObjectLog.cs" />
+    <Compile Include="packet\GetPNGList.cs" />
+    <Compile Include="packet\GetSCTList.cs" />
+    <Compile Include="packet\GetTCTList.cs" />
+    <Compile Include="packet\GetUserList.cs" />
+    <Compile Include="packet\GetVoiceList.cs" />
+    <Compile Include="packet\GetWAVList.cs" />
+    <Compile Include="packet\GetWCTList.cs" />
+    <Compile Include="logpacket\LOGCHALLENGE.cs" />
+    <Compile Include="logpacket\LOGFIRE.cs" />
+    <Compile Include="logpacket\LOGHIT.cs" />
+    <Compile Include="packet\Login.cs" />
+    <Compile Include="logpacket\LOGSURRENDER.cs" />
+    <Compile Include="packet\Result.cs" />
+    <Compile Include="packet\Start.cs" />
+    <Compile Include="packet\TrainingDetail.cs" />
+    <Compile Include="packet\TrainingResult.cs" />
+    <Compile Include="packet\TrainingUserList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="system\Base64.cs" />
+    <Compile Include="system\DB.cs" />
+    <Compile Include="system\FileLog.cs" />
+    <Compile Include="system\GoogleReceipt.cs" />
+    <Compile Include="system\JsonParser.cs" />
+    <Compile Include="system\LogDB.cs" />
+    <Compile Include="system\lzf.cs" />
+    <Compile Include="system\MyURL.cs" />
+    <Compile Include="system\Protocol.cs" />
+    <Compile Include="system\PublicKeyConvert.cs" />
+    <Compile Include="system\RecvLog.cs" />
+    <Compile Include="system\RecvPacket.cs" />
+    <Compile Include="system\SendPacket.cs" />
+    <Compile Include="ARTS\upload_fbx.aspx.cs">
+      <DependentUpon>upload_fbx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_mct.aspx.cs">
+      <DependentUpon>upload_mct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_png.aspx.cs">
+      <DependentUpon>upload_png.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_sct.aspx.cs">
+      <DependentUpon>upload_sct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_tct.aspx.cs">
+      <DependentUpon>upload_tct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_wav.aspx.cs">
+      <DependentUpon>upload_wav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ARTS\upload_wct.aspx.cs">
+      <DependentUpon>upload_wct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57159</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57159/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

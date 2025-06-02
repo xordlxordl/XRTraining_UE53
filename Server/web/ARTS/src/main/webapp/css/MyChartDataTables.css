@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+:root {
+  --dt-row-selected: 250, 253, 257;
+  --dt-row-selected-text: 0, 0, 0;
+  --dt-row-selected-link: 9, 10, 11;
+}
+
+table.dataTable {
+  margin: 0 auto;
+}
+
+table.dataTable td{
+  vertical-align:middle;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+    width: 6px;
+    
+}
+ 
+.scrollbar::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,1);
+    background-color: #FFFFFF;
+}
+
+table.dataTable thead > tr > th.sorting, table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting_asc_disabled, table.dataTable thead > tr > th.sorting_desc_disabled,
+table.dataTable thead > tr > td.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting_asc_disabled,
+table.dataTable thead > tr > td.sorting_desc_disabled {
+  cursor: pointer;
+  position: relative;
+  padding-right: 1px;
+}
+
+table.dataTable thead > tr > th.sorting:before, table.dataTable thead > tr > th.sorting:after, table.dataTable thead > tr > th.sorting_asc:before, table.dataTable thead > tr > th.sorting_asc:after, table.dataTable thead > tr > th.sorting_desc:before, table.dataTable thead > tr > th.sorting_desc:after, table.dataTable thead > tr > th.sorting_asc_disabled:before, table.dataTable thead > tr > th.sorting_asc_disabled:after, table.dataTable thead > tr > th.sorting_desc_disabled:before, table.dataTable thead > tr > th.sorting_desc_disabled:after,
+table.dataTable thead > tr > td.sorting:before,
+table.dataTable thead > tr > td.sorting:after,
+table.dataTable thead > tr > td.sorting_asc:before,
+table.dataTable thead > tr > td.sorting_asc:after,
+table.dataTable thead > tr > td.sorting_desc:before,
+table.dataTable thead > tr > td.sorting_desc:after,
+table.dataTable thead > tr > td.sorting_asc_disabled:before,
+table.dataTable thead > tr > td.sorting_asc_disabled:after,
+table.dataTable thead > tr > td.sorting_desc_disabled:before,
+table.dataTable thead > tr > td.sorting_desc_disabled:after {
+  position: absolute;
+  display: block;
+  opacity: 0.125;
+  right: 1px;
+  line-height: 1px;
+  font-size: 0.5em;
+}
+
+table.dataTable thead > tr > th.sorting_asc:before, table.dataTable thead > tr > th.sorting_desc:after,
+table.dataTable thead > tr > td.sorting_asc:before,
+table.dataTable thead > tr > td.sorting_desc:after {
+  opacity: 0.6;
+}
+
+table.dataTable thead > tr > th.sorting_desc_disabled:after, table.dataTable thead > tr > th.sorting_asc_disabled:before,
+table.dataTable thead > tr > td.sorting_desc_disabled:after,
+table.dataTable thead > tr > td.sorting_asc_disabled:before {
+  display: none;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+  outline: none;
+}
+
+div.dataTables_scrollBody > table.dataTable > thead > tr > th:before, div.dataTables_scrollBody > table.dataTable > thead > tr > th:after,
+div.dataTables_scrollBody > table.dataTable > thead > tr > td:before,
+div.dataTables_scrollBody > table.dataTable > thead > tr > td:after {
+  display: none;
+}
+
+
+/* 선택 된 행 표시 해주기*/
+table.dataTable > tbody > tr.selected > * 
+{
+  box-shadow: inset 0 0 0 9999px rgb(13, 110, 253);
+  box-shadow: inset 0 0 0 9999px rgb(var(--dt-row-selected));
+  color: rgb(255, 255, 255);
+  color: rgb(var(--dt-row-selected-text));
+}
+
+table.dataTable.compact thead th,
+table.dataTable.compact thead td,
+table.dataTable.compact tfoot th,
+table.dataTable.compact tfoot td,
+table.dataTable.compact tbody th,
+table.dataTable.compact tbody td 
+{
+  padding: 4px;
+}
+
+
+
+/*
+table.dataTable > tbody > tr.selected a {
+  color: rgb(9, 10, 11);
+  color: rgb(var(--dt-row-selected-link));
+}
+
+
+/*
+웬지 모르지만 스트립트가 안된다 이 
+table.dataTable.table-striped > tbody > tr.odd > * {
+  box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.05);
+}
+
+*/
+
+/* 홀수 칸 선택 되게 해줌 
+table.dataTable.table-striped > tbody > tr.odd.selected > * {
+  box-shadow: inset 0 0 0 9999px rgba(13, 110, 253, 0.95);
+  box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-selected), 0.95);
+}
+*/
+
+
+/* 테이블 그냥 호버 알파값 0.075를 0.575로 바꿔서 좀 찐하게 나온다 */
+table.dataTable.table-hover > tbody > tr:hover > * 
+{
+  box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 1);
+}
+
+
+/*테이블 선택한 후 호버 0.9를 0.5로 바꿈*/
+table.dataTable.table-hover > tbody > tr.selected:hover > * 
+{
+  box-shadow: inset 0 0 0 9999px rgba(0, 0, 253, 1);
+  box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-selected), 0.8);
+}
+
+/*딱히 하는건 없는거 같지만 최상위 옵션이니 그냥 놔둔다*/
+.dataTables_wrapper 
+{
+  font-family: Consolas;
+  font-size: 14px;
+  position: relative;
+  clear: both;
+  *zoom: 1;
+  zoom: 1;
+  
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+/*몇개씩 보기 콤보박스 왼쪽으로 붙이는거 없으면 오른쪽으로 좀 이동한다 */
+.dataTables_wrapper .dataTables_length 
+{
+  float: left;
+}
+
+/*
+div.dataTables_wrapper div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/*콤보 박스 와 개씩 보기 한줄에 보이게 하는거 없음 아래로 내려감*/
+div.dataTables_wrapper div.dataTables_length select 
+{
+  width: auto;
+  display: inline-block;
+}
+
+/* 검색바 오른쪽으로 붙이기*/
+div.dataTables_wrapper div.dataTables_filter 
+{
+  text-align: right;
+}
+/*
+div.dataTables_wrapper div.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/*검색: 에디트 박스 한줄로 붙이는 거 없으면 검색: 하고 에디트 박스가 아래로 내려간다*/
+div.dataTables_wrapper div.dataTables_filter input 
+{
+  margin-left: 0.1em;
+  display: inline-block;
+  width: auto;
+}
+
+/* 테이블 정보 1-10 총 몇명 보여주는거 왼쪽으로 붙이기 */
+div.dataTables_wrapper div.dataTables_info 
+{
+	clear: both;
+	float: left;
+	padding-top: 0.9em;
+}
+/*
+div.dataTables_wrapper div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+}
+*/
+
+a.page-link
+{
+	color: black;
+}
+
+.pagination a.page-link:focus {
+ 	background:white;
+	color: black;
+}
+.pagination a.page-link:active {
+ 	background:white;
+	color: black;
+}
+.pagination a.page-link:hover {
+ 	background:black;
+	color: white;
+}
+
+/* 페이징 버튼 오른쪽 끝으로 붙이기*/
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+  margin: 1px 0;
+  white-space: nowrap;
+  justify-content: flex-end;
+}
+
+
+table.dataTable.cell-border tbody th, table.dataTable.cell-border tbody td {
+  border-top: none;
+  border-right: 1px solid rgba(255, 255, 255, 1.0);
+}
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #aaa;
+  border-radius: 1px;
+  padding: 1px;
+  background-color: white;
+  margin-left: 1px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #aaa;
+  border-radius: 1px;
+  padding: 1px;
+  background-color: white;
+  padding: 1px;
+}
+div.dataTables_wrapper div.dataTables_length select{
+width:1px;
+}
+
+

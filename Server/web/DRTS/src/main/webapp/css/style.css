@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+
+.btn-rounded {
+    --mdb-btn-border-radius: 10rem;
+    border-radius: var(--mdb-btn-border-radius)
+}
+
+.menu {
+ font-family: "Montserrat", sans-serif;
+
+ background: #17181c;
+ width: 180px;
+ box-shadow: 0 4px 5px 3px rgba(255, 255, 255, 0.2);
+ position: absolute;
+ display: none;
+ z-index: 999999;
+ color: white;
+}
+
+.menu .menu-options {
+ list-style: none;
+ padding: 10px 0;
+}
+
+.menu .menu-options .menu-option {
+ font-weight: 500;
+ font-size: 14px;
+ padding: 10px 40px 10px 20px;
+ cursor: pointer;
+}
+
+.menu .menu-options .menu-option:hover {
+ background: rgba(1, 1, 1, 0.5);
+}
+
+.menu-option > a {
+ text-decoration: none;
+ color: #125be3;
+}
+
+/* Optionally define a fixed width for menus */
+.ui-menu {
+	width: 220px;
+}
+/* Allow to use <kbd> elements inside the title to define shortcut hints. */
+.ui-menu kbd {
+	padding-left: 1em;
+	float: right;
+}
+
+/* Define a custom icon */
+.ui-icon.custom-icon-firefox {
+	background-image: url("//raw.githubusercontent.com/mar10/jquery-ui-contextmenu/master/demo/application_firefox.gif");
+	background-position: 0 0;
+}
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+       
+  #page-wrapper {
+    padding-left: 250px;
+  }
+  
+  #sidebar-wrapper {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    margin-left: -280px;
+    background: #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  /* 사이드바 스타일 */
+  
+  .sidebar-nav {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 1.5em;
+    line-height: 2.8em;
+  }
+  
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+  }
+
+  
+  .sidebar-nav > .sidebar-brand {
+    font-size: 1.3em;
+    line-height: 3em;
+  }
+      .bd-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1071;
+  min-height: 4rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+.bd-sidebar {
+  position: sticky;
+  top: 4rem;
+  z-index: 1000;
+  height: calc(100vh - 4rem);
+  background: #eee;
+  border-right: 1px solid rgba(0,0,0,.1);
+  max-width: 220px;
+  display: flex;
+  padding: 0;
+  overflow-y: hidden;
+  flex-direction: column;
+}
+.bd-sidebar-body {
+  height: 100%;
+  overflow-y: auto;
+  display: block;
+}
+.bd-sidebar-body .nav {
+  display: block;
+}
+.bd-sidebar-body .nav>li>a {
+  display: block;
+  padding: .25rem 1.5rem;
+  font-size: 90%;
+}
+.bd-sidebar-footer {
+  padding: 1rem;
+  background: #ddd;
+}
