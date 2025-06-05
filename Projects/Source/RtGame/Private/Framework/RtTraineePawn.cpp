@@ -52,6 +52,8 @@
 #include "Framework/RtStartAreaEffect.h"
 #include "Framework/RtDirectionArrowComponent.h"
 
+#include "EngineUtils.h"
+
 //Hand Tracking
 
 ARtTraineePawn::ARtTraineePawn()
@@ -281,12 +283,7 @@ void ARtTraineePawn::BeginPlay()
 	TraineeLocActor = MakeWeakObjectPtr<AActor>(GetWorld()->SpawnActor<AActor>(LoadClass<AActor>(nullptr, RtSctPath::RtTraineeLocActor)));
 	TraineeLocActor->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
 
-	Set_Visiblity_MotionController(IsVR);
-	if (!IsVR)
-	{
-		ShotStart->AttachToComponent(Camera, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
-		ShotStart->SetRelativeTransform(FTransform::Identity);
-	}
+
 
 	// Voice Init
 	//VoiceCapture = FVoiceModule::Get().CreateVoiceCapture(""); // Get Default Voice Capture Device
@@ -1133,6 +1130,14 @@ void ARtTraineePawn::SetPlaySettings()
 		SceneManager->OnMapLoadComplete.AddUObject(this, &ARtTraineePawn::OnLoadMapComplete);
 
 	SetVisibleHead(UGameplayStatics::GetPlayerController(GetWorld(), 0) != Controller);
+
+	Set_Visiblity_MotionController(IsVR);
+	if (!IsVR)
+	{
+		ShotStart->AttachToComponent(Camera, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+		ShotStart->SetRelativeTransform(FTransform::Identity);
+	}
+
 	//SkeletalMesh->HideBoneByName(FName("neck_01"), EPhysBodyOp::PBO_None);//해당 본 그림자도 없어짐
 	//PoseableMesh->HideBoneByName(FName("neck_01"), EPhysBodyOp::PBO_None);//해당 본 그림자도 없어짐
 
@@ -1165,8 +1170,8 @@ void ARtTraineePawn::Multicast_SetMeshVisible_Implementation(bool isVisible)
 		PoseableMesh->SetVisibility(false);
 	}
 
-	HeadMesh->SetVisibility(!isVisible && IsVR);
-	HMDMesh->SetVisibility(!isVisible && IsVR);
+	HeadMesh->SetVisibility(!isVisible);
+	HMDMesh->SetVisibility(!isVisible);
 }
 
 void ARtTraineePawn::SetViewpoint(uint8 viewpoint, float armLength)
@@ -1680,9 +1685,7 @@ void ARtTraineePawn::OnCompleteCalibration()
 	if (!pState)
 		return;
 
-	FRtDeviceInfo info = pState->Get_PlayerInfo();
-	info.CompleteCalibration = true;
-	pState->Server_Change_ReadyState(info);
+	pState->Change_ReadyCalibration(true);
 }
 
 URtNetworkManager* ARtTraineePawn::Get_NetManager()
@@ -1733,6 +1736,17 @@ void ARtTraineePawn::ReleaseMenu()
 
 void ARtTraineePawn::SctInteract()
 {
+	if (IsPassthroughMode)
+	{
+		IsPassthroughMode = false;
+	}
+	else
+	{
+		IsPassthroughMode = true;
+	}
+
+	ActivePassthrough(IsPassthroughMode);
+
 	ARtGameScenarioController::Get(GetWorld())->Interact_AimTarget();
 
 	/*if (!WalkieTalkieActor || !WalkieTalkieMenuActor) return;
@@ -1902,8 +1916,7 @@ void ARtTraineePawn::OnLoadMapComplete()
 	{
 		FRtMCTTemplate mct = SceneManager->GetMctData();
 		FRtDeviceInfo Info = pState->Get_PlayerInfo();
-		Info.CompleteMapLoad = true;
-		pState->Server_Change_ReadyState(Info);
+		pState->Change_ReadyMapLoad(true);
 
 		FString role = Info.PlayerRoleID;
 
@@ -2404,6 +2417,62 @@ void ARtTraineePawn::ChangeAmmunitionMode()
 	{
 		mainWidget->SetAmmunitionType(AmmunitionMode);
 
+	}
+}
+
+void ARtTraineePawn::ActivePassthrough(bool passthorughOnOff)
+{
+	if (passthorughOnOff && !PlanerHandle.Valid)
+	{
+		PlanerHandle = UViveOpenXRPassthroughFunctionLibrary::CreatePassthroughUnderlay(
+			EXrPassthroughLayerForm::Planar,
+			true // 즉시 활성화
+		);
+
+		if (PlanerHandle.Valid)
+		{
+			UE_LOG(LogTemp, Log, TEXT("Passthrough Created (Planar)"));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to Create Passthrough"));
+		}
+	}
+	else if (!passthorughOnOff && PlanerHandle.Valid)
+	{
+		bool bDestroyed = UViveOpenXRPassthroughFunctionLibrary::DestroyPassthroughUnderlay(PlanerHandle);
+
+		if (bDestroyed)
+		{
+			PlanerHandle = FPassthroughHandle(); // 핸들 초기화
+			UE_LOG(LogTemp, Log, TEXT("Passthrough Destroyed"));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to Destroy Passthrough"));
+		}
+	}
+}
+
+void ARtTraineePawn::DeactivePassthrough()
+{
+	if (PlanerHandle.Valid)
+	{
+		bool bDestroyed = UViveOpenXRPassthroughFunctionLibrary::DestroyPassthroughUnderlay(PlanerHandle);
+
+		if (bDestroyed)
+		{
+			PlanerHandle = FPassthroughHandle(); // 핸들 초기화
+			UE_LOG(LogTemp, Log, TEXT("Passthrough Destroyed"));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to Destroy Passthrough"));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("No valid passthrough to destroy."));
 	}
 }
 

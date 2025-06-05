@@ -43,7 +43,7 @@ protected:
 
 	TObjectPtr<ARtTraineePawn> player;
 
-	const float fCheckRange = 50; // cm
+	const float fCheckRange = 100; // cm
 
 // Navigation 경로 표시용
 //public:

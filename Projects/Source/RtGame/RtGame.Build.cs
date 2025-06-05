@@ -94,7 +94,7 @@ public class RtGame : ModuleRules
             viveopenxrPath + "ViveOpenXRPassthrough/Private/External",
             viveopenxrPath + "ViveOpenXRPassthrough/Private",
         });
-        
+
 
         // Modules
         PrivateDependencyModuleNames.AddRange(new string[] {

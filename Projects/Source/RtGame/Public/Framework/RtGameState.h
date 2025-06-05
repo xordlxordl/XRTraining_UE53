@@ -154,6 +154,7 @@ public:
 
 	void Bind();
 	void UnBind();
+	void UpdateDeviceInfo();
 
 private:
 

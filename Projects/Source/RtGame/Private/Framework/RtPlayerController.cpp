@@ -1774,6 +1774,13 @@ void ARtPlayerController::MoveCameraByDelta(const FVector2D& MouseDelta)
 			ControllerModeCamera->SetActorLocation(ControllerModeCamera->GetActorLocation() + MoveVector);
 				
 			UE_LOG(LogTemp, Warning, TEXT("Move: %s"), *MoveVector.ToString());
+#if !UE_BUILD_SHIPPING
+#if WITH_EDITOR
+			FVector Loc = ControllerModeCamera->GetActorLocation();
+			FString Msg = FString::Printf(TEXT("Camera Location : %s"), *Loc.ToString());
+			GEngine->AddOnScreenDebugMessage(100, 10.0f, FColor::Yellow, Msg, true, FVector2D(2.0f, 2.0f));
+#endif
+#endif
 		}
 	}
 }
@@ -1793,6 +1800,13 @@ void ARtPlayerController::ZoomCamera(float ScrollDelta)
 				ControllerModeCamera->SetActorLocation(ControllerModeCamera->GetActorLocation() + FVector(0, 0, ScrollDelta * ZoomSpeed));
 
 				UE_LOG(LogTemp, Warning, TEXT("Zoom Changed: = %.1f"), ScrollDelta);
+#if !UE_BUILD_SHIPPING
+#if WITH_EDITOR
+				FVector Loc = ControllerModeCamera->GetActorLocation();
+				FString Msg = FString::Printf(TEXT("Camera Location : %s"), *Loc.ToString());
+				GEngine->AddOnScreenDebugMessage(100, 10.0f, FColor::Yellow, Msg, true, FVector2D(2.0f, 2.0f));
+#endif
+#endif
 			}
 		}
 	}

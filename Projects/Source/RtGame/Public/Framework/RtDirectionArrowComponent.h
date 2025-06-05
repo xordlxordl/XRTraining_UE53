@@ -39,5 +39,5 @@ private:
 	TObjectPtr<AActor> TargetActor;
 
 	const float fArrowHeight = 100;	// 바닥으로부터 높이
-	const float fCheckNear = 50;	// 가까운 경우 표시 안함
+	const float fCheckNear = 100;	// 가까운 경우 표시 안함
 };

@@ -9,6 +9,7 @@
 #include "NavigationSystem.h"
 
 #include "Components/SplineComponent.h"
+#include "UI/Trainee/Rt_Trainee_Main.h"
 
 // Sets default values
 ARtStartAreaEffect::ARtStartAreaEffect(const FObjectInitializer& ObjectInitializer)
@@ -65,6 +66,8 @@ void ARtStartAreaEffect::OnStartTraining(bool isStart)
 {
 	ARtGameScenarioController* pController = ARtGameScenarioController::Get(this);
 	
+	player->GetMainWidget()->RemoveSctText();
+
 	if (pController && pController->SetSctGamePlay.IsAlreadyBound(this, &ARtStartAreaEffect::OnStartTraining))
 		pController->SetSctGamePlay.RemoveDynamic(this, &ARtStartAreaEffect::OnStartTraining);
 
@@ -95,8 +98,7 @@ void ARtStartAreaEffect::Check_Area()
 		if (info.InStartingPoint != result)
 		{
 			OnChangeInPlayer(result);
-			info.InStartingPoint = result;
-			pState->Server_Change_ReadyState(info);
+			pState->Change_ReadyStartingPoint(result);
 		}
 	}
 }

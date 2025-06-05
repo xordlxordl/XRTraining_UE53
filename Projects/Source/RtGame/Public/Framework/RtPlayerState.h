@@ -101,6 +101,24 @@ public:
 	void Set_LoginInfo(const FString& InOptions, bool InServer);
 	void Set_AddtionalInformation(const FRtUserInfo_PreLogin& InInfo);  // 로그인 정보 추가.
 
+	void Change_ReadyMapLoad(bool isReady);
+	UFUNCTION(Server, Unreliable)
+	void Server_Change_ReadyMapLoad(bool isReady);
+	UFUNCTION(NetMulticast, Unreliable)
+	void Multicast_Change_ReadyMapLoad(bool isReady);
+	
+	void Change_ReadyStartingPoint(bool isReady);
+	UFUNCTION(Server, Unreliable)
+	void Server_Change_ReadyStartingPoint(bool isReady);
+	UFUNCTION(NetMulticast, Unreliable)
+	void Multicast_Change_ReadyStartingPoint(bool isReady);
+	
+	void Change_ReadyCalibration(bool isReady);
+	UFUNCTION(Server, Unreliable)
+	void Server_Change_ReadyCalibration(bool isReady);
+	UFUNCTION(NetMulticast, Unreliable)
+	void Multicast_Change_ReadyCalibration(bool isReady);
+
 	UFUNCTION(Server, Unreliable)
 	void Server_Change_ReadyState(const FRtDeviceInfo& Info);
 
@@ -131,5 +149,7 @@ public:
 
 protected:
 	virtual void CopyProperties(APlayerState* PlayerState) override;
+
+	void Change_DeviceInfo_Broadcast();
 
 };

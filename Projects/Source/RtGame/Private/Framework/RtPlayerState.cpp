@@ -97,6 +97,54 @@ void ARtPlayerState::Set_AddtionalInformation(const FRtUserInfo_PreLogin& InInfo
 	Play_Type = InInfo.PlayType;
 }
 
+void ARtPlayerState::Change_ReadyMapLoad(bool isReady)
+{
+	Server_Change_ReadyMapLoad(isReady);
+}
+
+void ARtPlayerState::Server_Change_ReadyMapLoad_Implementation(bool isReady)
+{
+	Multicast_Change_ReadyMapLoad(isReady);
+}
+
+void ARtPlayerState::Multicast_Change_ReadyMapLoad_Implementation(bool isReady)
+{
+	DeviceInfo.CompleteMapLoad = isReady;
+	Change_DeviceInfo_Broadcast();
+}
+
+void ARtPlayerState::Change_ReadyStartingPoint(bool isReady)
+{
+	Server_Change_ReadyStartingPoint(isReady);
+}
+
+void ARtPlayerState::Server_Change_ReadyStartingPoint_Implementation(bool isReady)
+{
+	Multicast_Change_ReadyStartingPoint(isReady);
+}
+
+void ARtPlayerState::Multicast_Change_ReadyStartingPoint_Implementation(bool isReady)
+{
+	DeviceInfo.InStartingPoint = isReady;
+	Change_DeviceInfo_Broadcast();
+}
+
+void ARtPlayerState::Change_ReadyCalibration(bool isReady)
+{
+	Server_Change_ReadyCalibration(isReady);
+}
+
+void ARtPlayerState::Server_Change_ReadyCalibration_Implementation(bool isReady)
+{
+	Multicast_Change_ReadyCalibration(isReady);
+}
+
+void ARtPlayerState::Multicast_Change_ReadyCalibration_Implementation(bool isReady)
+{
+	DeviceInfo.CompleteCalibration = isReady;
+	Change_DeviceInfo_Broadcast();
+}
+
 void ARtPlayerState::Server_Change_ReadyState_Implementation(const FRtDeviceInfo& Info)
 {
 	Multicast_Change_ReadyState(Info);
@@ -109,10 +157,15 @@ void ARtPlayerState::Multicast_Change_ReadyState_Implementation(const FRtDeviceI
 	DeviceInfo.CompleteCalibration = Info.CompleteCalibration;
 
 	// 
+	Change_DeviceInfo_Broadcast();
+}
+
+void ARtPlayerState::Change_DeviceInfo_Broadcast()
+{
 	if (Play_Type == ERt_PlayType::E_Control || Play_Type == ERt_PlayType::E_Server)
 		return;
 
-	OnDeviceInfoChanged.Broadcast(PlayerId, Info);
+	OnDeviceInfoChanged.Broadcast(PlayerId, DeviceInfo);
 }
 
 

@@ -416,3 +416,13 @@ void ARtGameState::HandleDeviceInfoChanged(int32 PlayerId, const FRtDeviceInfo& 
 	UE_LOG(LogRtGameState, Log, TEXT(">>>>> HandleDeviceInfoChanged(PlayerId) : %d"), PlayerId);
 	OnDeviceInfoChanged.Broadcast(PlayerId, Info);
 }
+
+// dave - Notify deivce infos of all players
+void ARtGameState::UpdateDeviceInfo()
+{
+	for (auto it : PlayerArray) {
+		if (auto* ps = Cast<ARtPlayerState>(it.Get())) {
+			OnDeviceInfoChanged.Broadcast(it->PlayerId, ps->Get_PlayerInfo());
+		}
+	}
+}

@@ -18,6 +18,8 @@
 #include "VoiceModule.h"
 #include "Voice.h"
 
+#include "ViveOpenXRPassthroughFunctionLibrary.h"
+
 #include "RtTraineePawn.generated.h"
 
 class UWidgetComponent;
@@ -497,4 +499,14 @@ public:
 protected:
 	void ChangeAmmunitionMode();
 	bool AmmunitionMode = false; // false: blank ammunition(°øÆ÷Åº), true: live ammunition(½ÇÅº). ½ÇÅº Á¾·ùµµ ¿©·¯ °³·Î ¹Ù²ð ¼ö ÀÖÀ½..
+
+public:
+	void ActivePassthrough(bool passthorughOnOff);
+	void DeactivePassthrough();
+
+private:
+	FPassthroughHandle PlanerHandle;
+	bool IsPassthroughMode = false;
+
+	AActor* SkySphereActor;
 };

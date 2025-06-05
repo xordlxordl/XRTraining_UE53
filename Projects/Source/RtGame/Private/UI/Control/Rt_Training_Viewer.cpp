@@ -11,12 +11,15 @@
 #include "Kismet/KismetSystemLibrary.h"
 
 #include "TimerManager.h"
+#include "EngineUtils.h" 
+
 // Framework 
 #include "Framework/RtPlayerController.h"
 #include "Framework/RtGameHUD.h"
 #include "Framework/RtGameState.h"
 #include "Framework/RtGameMode.h"
 #include "Framework/RtPlayerState.h"
+#include "Framework/RtTraineePawn.h"
 
 // UI
 #include "UI/Control/Rt_Training_Viewer_TraineeList.h"
@@ -44,6 +47,9 @@ void URt_Training_Viewer::NativeConstruct()
 	FViewport::ViewportResizedEvent.AddUObject(this, &URt_Training_Viewer::OnViewportResized);
 	bUseRenderTarget = true; // using render target 
 
+	SetKeyboardFocus();
+	bIsFocusable = true;
+	CurrentNameInfoIndex = ENameDisplayMode::RoleAndName;
 	if (auto* gs = Get_GameState())
 	{
 		gs->Bind();
@@ -177,7 +183,9 @@ void URt_Training_Viewer::NativeOnInitialized()
 void URt_Training_Viewer::HandleDeviceInfoChanged(int32 PlayerId, const FRtDeviceInfo& Info)
 {
 	// Check User Block 
-	
+	if (Info.Name.IsEmpty())
+		return;
+
 	if (auto* pc = Get_PlayerController()) {
 		auto& device_array = pc->Get_Accessible_PlayerDevices();
 
@@ -272,9 +280,11 @@ void URt_Training_Viewer::NativeTick(const FGeometry& MyGeometry, float InDeltaT
 			}
 		}
 	}
+
+	UpdateIcons();
 }
 
-// dave = handle mouse events
+// dave - handle mouse events
 FReply URt_Training_Viewer::NativeOnMouseButtonDown(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent)
 {
 	FGeometry ImageGeometry = Image_56->GetCachedGeometry();
@@ -335,6 +345,24 @@ FReply URt_Training_Viewer::NativeOnMouseWheel(const FGeometry& InGeometry, cons
 	return FReply::Handled();
 }
 
+// dave = handle keyboard events
+FReply URt_Training_Viewer::NativeOnKeyDown(const FGeometry& InGeometry, const FKeyEvent& InKeyEvent)
+{
+	const FKey Key = InKeyEvent.GetKey();
+
+	// Change types of display names
+	if (Key == EKeys::Tab)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Tab Pressed.."));
+		
+		constexpr uint8 MaxIndex = static_cast<uint8>(ENameDisplayMode::Max);
+		CurrentNameInfoIndex = static_cast<ENameDisplayMode>(
+			(CurrentNameInfoIndex.GetIntValue() + 1) % MaxIndex);
+
+		return FReply::Handled(); 
+	}
+	return Super::NativeOnKeyDown(InGeometry, InKeyEvent);
+}
 
 void URt_Training_Viewer::OnViewportResized(FViewport* Viewport, uint32 Unused)
 {
@@ -387,6 +415,52 @@ void URt_Training_Viewer::RepeatingFunction()
 					}
 				}
 			}
+		}
+		else
+		{
+			// dave - fresh device infos
+			if (ARtGameState* GS = Cast<ARtGameState>(world->GetGameState()))
+			{
+				GS->UpdateDeviceInfo();
+			}
+		}
+	}
+}
+
+// dave - update names in topview
+void URt_Training_Viewer::UpdateIcons()
+{
+	if (!GetWorld()) return;
+
+	for (TActorIterator<ARtTraineePawn> It(GetWorld()); It; ++It)
+	{
+		ARtTraineePawn* TraineePawn = *It;
+		if (!TraineePawn) continue;
+
+		if (ARtPlayerState* PS = TraineePawn->GetPlayerState<ARtPlayerState>())
+		{
+			FRtDeviceInfo Info = PS->Get_PlayerInfo();
+			FString NameText = "";
+
+			switch (CurrentNameInfoIndex)
+			{
+			case ENameDisplayMode::RoleAndName:
+				NameText = Info.PlayerRole + "\n" + Info.PlayerInfo.TraineeName;
+				break;
+
+			case ENameDisplayMode::NameOnly:
+				NameText = Info.Name;
+				break;
+
+			case ENameDisplayMode::NameAndSN:
+				NameText = Info.PlayerInfo.TraineeName + "\n" + Info.PlayerInfo.TraineeSN;
+				break;
+
+			default:
+				break;
+			}
+
+			TraineePawn->Change_IconName(FText::FromString(NameText));
 		}
 	}
 }

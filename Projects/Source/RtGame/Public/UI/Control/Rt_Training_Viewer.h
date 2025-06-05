@@ -30,6 +30,15 @@ enum class ERt_TrainingView_State : uint8
 	Suspended
 };
 
+UENUM(BlueprintType)
+enum class ENameDisplayMode : uint8
+{
+	RoleAndName   UMETA(DisplayName = "Role + Name"),
+	NameOnly      UMETA(DisplayName = "Name"),
+	NameAndSN     UMETA(DisplayName = "Name + SN"),
+	Max UMETA(Hidden)
+};
+
 /**
  * 
  */
@@ -82,6 +91,7 @@ private:
 	FTimerHandle ResizeTimerHandler;
 	FTimerHandle TimerHandle;
 	int CurrentTime = 0;
+	TEnumAsByte<ENameDisplayMode> CurrentNameInfoIndex;
 	bool IsStartTraining = false;
 	bool bConfirm_TraineeDeployment = false;
 
@@ -99,6 +109,7 @@ protected:
 	virtual FReply NativeOnMouseMove(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent);
 	virtual FReply NativeOnMouseButtonUp(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent);
 	virtual FReply NativeOnMouseWheel(const FGeometry& InGeometry, const FPointerEvent& InMouseEvent);
+	virtual FReply NativeOnKeyDown(const FGeometry& InGeometry, const FKeyEvent& InKeyEvent);
 
 public:
 
@@ -152,4 +163,5 @@ private:
 	void HandleDeviceInfoChanged(int32 PlayerId, const FRtDeviceInfo& Info);
 	bool VerifyReady(int32 playerId, const TArray<FRtDeviceInfo>& deviceInfo);
 	bool IsVR(int32 PlayerId);
+	void UpdateIcons();
 };

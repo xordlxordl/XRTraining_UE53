@@ -62,30 +62,56 @@ void URt_Result_DetailBox::Init_ResultList()
 	if (DetailStringTable == nullptr) return;
 
 	FString OUTPUT;
+
+	// ÈÆ·Ãº¸Á÷
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("Job"), OUTPUT);
 	Role_Block->InitTextBlocks(OUTPUT);
+
+	// ÈÆ·Ã½Ã°£
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("PlayTime"), OUTPUT);
 	Time_Block->InitTextBlocks(OUTPUT);
+
+	// ÀÌµ¿°Å¸®
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("Distance"), OUTPUT);
 	Distance_Block->InitTextBlocks(OUTPUT);
+
+	// »ç°Ý È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("FireCount"), OUTPUT);
 	FireCount_Block->InitTextBlocks(OUTPUT);
+
+	// ÀûÁß È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("HitCount"), OUTPUT);
 	HitCount_Block->InitTextBlocks(OUTPUT);
+
+	// ¼öÇÏ È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("ChallengeCount"), OUTPUT);
 	ChallengeCount_Block->InitTextBlocks(OUTPUT);
+
+	// ÅõÇ× ¸í·É È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("SurrenderCount"), OUTPUT);
 	SurrenderCount_Block->InitTextBlocks(OUTPUT);
+
+	// Æ÷¹Ú È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("BindCount"), OUTPUT);
 	BindCount_Block->InitTextBlocks(OUTPUT);
-	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("CommanMoveCount"), OUTPUT);
+
+	// ÀÌµ¿Áö½Ã È½¼ö
+	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("MoveOrderCount"), OUTPUT);
 	Command_Block->InitTextBlocks(OUTPUT);
+
+	// »óÈ²º¸°í È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("BreifCount"), OUTPUT);
 	Breif_Block->InitTextBlocks(OUTPUT);
+
+	// Áõ¿ø¿äÃ» È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("CallCount"), OUTPUT);
 	Call_Block->InitTextBlocks(OUTPUT);
+
+	// EOD ¿äÃ» È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("EodCount"), OUTPUT);
 	EOD_Block->InitTextBlocks(OUTPUT);
+
+	// ¿ÀÀÎ »ç°Ý È½¼ö
 	DetailStringTable->GetMutableStringTable().Get().GetSourceString(FTextKey("BadFireCount"), OUTPUT);
 	BadFireCount_Block->InitTextBlocks(OUTPUT);
 }
