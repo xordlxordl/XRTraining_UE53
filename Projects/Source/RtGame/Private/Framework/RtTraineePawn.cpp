@@ -52,8 +52,6 @@
 #include "Framework/RtStartAreaEffect.h"
 #include "Framework/RtDirectionArrowComponent.h"
 
-#include "EngineUtils.h"
-
 //Hand Tracking
 
 ARtTraineePawn::ARtTraineePawn()
@@ -283,7 +281,26 @@ void ARtTraineePawn::BeginPlay()
 	TraineeLocActor = MakeWeakObjectPtr<AActor>(GetWorld()->SpawnActor<AActor>(LoadClass<AActor>(nullptr, RtSctPath::RtTraineeLocActor)));
 	TraineeLocActor->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
 
+	Set_Visiblity_MotionController(IsVR);
+	if (!IsVR)
+	{
+		ShotStart->AttachToComponent(Camera, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
+		ShotStart->SetRelativeTransform(FTransform::Identity);
+	}
+	else
+	{
+		FTimerHandle InitDelayHandleActive;
+		GetWorld()->GetTimerManager().SetTimer(InitDelayHandleActive, [this]()
+			{
+				ActivePassthrough(true);
+			}, 1.0f, false);
 
+		FTimerHandle InitDelayHandleDeactive;
+		GetWorld()->GetTimerManager().SetTimer(InitDelayHandleDeactive, [this]()
+			{
+				ActivePassthrough(false);
+			}, 2.0f, false);
+	}
 
 	// Voice Init
 	//VoiceCapture = FVoiceModule::Get().CreateVoiceCapture(""); // Get Default Voice Capture Device
@@ -670,7 +687,7 @@ void ARtTraineePawn::InitWalkieTalkie()
 				WalkieTalkieActor->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
 
 				// 위치 조정: 플레이어 기준 앞쪽 + 위쪽
-				const FVector OffsetLocation = FVector(25.0f, 30.0f, -11.0f);
+				const FVector OffsetLocation = FVector(25.0f, 50.0f, -11.0f);
 				const FRotator OffsetRotation = FRotator(-5.0f, 120.0f, -5.0f);
 
 				// Relative 위치 설정
@@ -738,12 +755,12 @@ void ARtTraineePawn::ToggleHideWalkieTalkie()
 	if (WalkieTalkie->GetIsActivated())
 	{
 		WalkieTalkie->SetIsActivated(false);
-		WalkieTalkie->MoveAnimation(FVector(25.0f, 8.0f, -11.0f), FVector(25.0f, 30.0f, -11.0f), 0.2f);
+		WalkieTalkie->MoveAnimation(FVector(25.0f, 8.0f, -11.0f), FVector(25.0f, 50.0f, -11.0f), 0.2f);
 	}
 	else
 	{
 		WalkieTalkie->SetIsActivated(true);
-		WalkieTalkie->MoveAnimation(FVector(25.0f, 30.0f, -11.0f), FVector(25.0f, 8.0f, -11.0f), 0.2f);
+		WalkieTalkie->MoveAnimation(FVector(25.0f, 50.0f, -11.0f), FVector(25.0f, 8.0f, -11.0f), 0.2f);
 	}
 }
 
@@ -1130,14 +1147,6 @@ void ARtTraineePawn::SetPlaySettings()
 		SceneManager->OnMapLoadComplete.AddUObject(this, &ARtTraineePawn::OnLoadMapComplete);
 
 	SetVisibleHead(UGameplayStatics::GetPlayerController(GetWorld(), 0) != Controller);
-
-	Set_Visiblity_MotionController(IsVR);
-	if (!IsVR)
-	{
-		ShotStart->AttachToComponent(Camera, FAttachmentTransformRules::SnapToTargetNotIncludingScale);
-		ShotStart->SetRelativeTransform(FTransform::Identity);
-	}
-
 	//SkeletalMesh->HideBoneByName(FName("neck_01"), EPhysBodyOp::PBO_None);//해당 본 그림자도 없어짐
 	//PoseableMesh->HideBoneByName(FName("neck_01"), EPhysBodyOp::PBO_None);//해당 본 그림자도 없어짐
 
@@ -1170,8 +1179,8 @@ void ARtTraineePawn::Multicast_SetMeshVisible_Implementation(bool isVisible)
 		PoseableMesh->SetVisibility(false);
 	}
 
-	HeadMesh->SetVisibility(!isVisible);
-	HMDMesh->SetVisibility(!isVisible);
+	HeadMesh->SetVisibility(!isVisible && IsVR);
+	HMDMesh->SetVisibility(!isVisible && IsVR);
 }
 
 void ARtTraineePawn::SetViewpoint(uint8 viewpoint, float armLength)
@@ -1479,7 +1488,7 @@ void ARtTraineePawn::UT_CalibrationInit()
 
 	if (CanCalibrate() == false)
 	{
-		GetMainWidget()->SetSctText(TEXT("트래커를 확인해주세요"), FColor::Red);
+		GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCheckTracker), FColor::Red);
 		FTimerHandle retimerHandle;
 		GetWorld()->GetTimerManager().SetTimer(retimerHandle, FTimerDelegate::CreateUObject(
 			this, &ARtTraineePawn::UT_CalibrationInit), 1.f, false);
@@ -1495,24 +1504,24 @@ void ARtTraineePawn::UT_CalibrationInit()
 	//if (VRMeshes.Get())
 	//	VRMeshes->SetTrackersVisibility(true);
 
-	FString str = FString::Printf(TEXT("캘리브레이션을 진행합니다. 잠시 멈춰서 대기해주세요\n%d"), 10);
-	GetMainWidget()->SetSctText(*str, FColor::Red);
+	FString findstr = URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCalibrationPrepare) + TEXT("\n");
+	GetMainWidget()->SetSctText(findstr + FString::FromInt(10), FColor::Red);
 
 	double startTime = GWorld->TimeSeconds;
 	TSharedPtr<FTimerHandle> textHandle = MakeShared<FTimerHandle>();
 	GetWorld()->GetTimerManager().SetTimer(*textHandle, FTimerDelegate::CreateLambda([this, textHandle, startTime]() {
 		int Time = GWorld->TimeSeconds - startTime;
 		Time = 10 - Time;
-		
+
 		if (Time <= 0)
 		{
 			GetMainWidget()->RemoveSctText();
 			GetWorld()->GetTimerManager().ClearTimer(*textHandle);
 			return;
 		}
-
-		FString str = FString::Printf(TEXT("캘리브레이션을 진행합니다. 잠시 멈춰서 대기해주세요\n%d"), Time);
-		GetMainWidget()->SetSctText(*str, FColor::Red);
+		
+		FString str = URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCalibrationPrepare) + TEXT("\n");
+		GetMainWidget()->SetSctText(str + FString::FromInt(Time), FColor::Red);
 		}), 1, true);
 
 	FTimerHandle timerHandle;
@@ -1524,7 +1533,7 @@ void ARtTraineePawn::UT_CalibrationPrepare()
 {
 	if (CanCalibrate() == false)
 	{
-		GetMainWidget()->SetSctText(TEXT("트래커를 확인해주세요"), FColor::Red);
+		GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCheckTracker), FColor::Red);
 		FTimerHandle retimerHandle;
 		GetWorld()->GetTimerManager().SetTimer(retimerHandle, FTimerDelegate::CreateUObject(
 			this, &ARtTraineePawn::UT_CalibrationPrepare), 1.f, false);
@@ -1538,7 +1547,7 @@ void ARtTraineePawn::UT_CalibrationPrepare()
 	SkeletalMesh->SetRelativeScale3D(MotionScale);
 	PoseableMesh->SetRelativeScale3D(MotionScale);
 
-	GetMainWidget()->SetSctText(TEXT("앞으로 나란히 자세를 취하고 잠시 유지해주세요"), FColor::Red);
+	GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCalibrationPose), FColor::Red);
 
 	FTimerHandle timerHandle;
 	GetWorld()->GetTimerManager().SetTimer(timerHandle, FTimerDelegate::CreateUObject(
@@ -1549,7 +1558,7 @@ void ARtTraineePawn::UT_CalibrationReset()
 {
 	if (CanCalibrate() == false)
 	{
-		GetMainWidget()->SetSctText(TEXT("트래커를 확인해주세요"), FColor::Red);
+		GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCheckTracker), FColor::Red);
 		FTimerHandle retimerHandle;
 		GetWorld()->GetTimerManager().SetTimer(retimerHandle, FTimerDelegate::CreateUObject(
 			this, &ARtTraineePawn::UT_CalibrationReset), 1.f, false);
@@ -1581,7 +1590,7 @@ void ARtTraineePawn::UT_Calibrate()
 {
 	if (!CanCalibrate())
 	{
-		GetMainWidget()->SetSctText(TEXT("트래커를 확인해주세요"), FColor::Red);
+		GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCheckTracker), FColor::Red);
 		FTimerHandle retimerHandle;
 		GetWorld()->GetTimerManager().SetTimer(retimerHandle, FTimerDelegate::CreateUObject(
 			this, &ARtTraineePawn::UT_Calibrate), 1.f, false);
@@ -1600,8 +1609,7 @@ void ARtTraineePawn::UT_Calibrate()
 	//	, *UKismetStringLibrary::Conv_BoolToString(isright));
 	//UKismetSystemLibrary::PrintString(this, log, true, true, FLinearColor::Red, 2, TEXT("Grab"));
 
-	FString text = FString::Printf(TEXT("자세를 유지한 채 주먹을 쥐어주세요"));
-	GetMainWidget()->SetSctText(text, FColor::Red);
+	GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCalibrationPist), FColor::Red);
 
 	if (!isGrab)
 	{
@@ -1622,7 +1630,7 @@ void ARtTraineePawn::UT_CalibrationEnd()
 {
 	if (CanCalibrate() == false)
 	{
-		GetMainWidget()->SetSctText(TEXT("캘리브레이션을 실패했습니다.\n캘리브레이션을 다시 시작합니다."), FColor::Red);
+		GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCalibrationFailed), FColor::Red);
 		FTimerHandle retimerHandle;
 		GetWorld()->GetTimerManager().SetTimer(retimerHandle, FTimerDelegate::CreateUObject(
 			this, &ARtTraineePawn::UT_CalibrationInit), 1.f, false);
@@ -1637,7 +1645,7 @@ void ARtTraineePawn::UT_CalibrationEnd()
 	CaptureDevice->ClavicleRotationOffset_Pitch = 0;
 	CaptureDevice->ClavicleRotationOffset_Yaw = 0;
 
-	GetMainWidget()->SetSctText(TEXT("캘리브레이션이 완료되었습니다"), FColor::Green);
+	GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtCalibrationComplete), FColor::Green);
 
 	if (Delegate_CompleteCalibration.IsBound())
 		Delegate_CompleteCalibration.Broadcast();
@@ -1685,7 +1693,9 @@ void ARtTraineePawn::OnCompleteCalibration()
 	if (!pState)
 		return;
 
-	pState->Change_ReadyCalibration(true);
+	FRtDeviceInfo info = pState->Get_PlayerInfo();
+	info.CompleteCalibration = true;
+	pState->Server_Change_ReadyState(info);
 }
 
 URtNetworkManager* ARtTraineePawn::Get_NetManager()
@@ -1736,17 +1746,6 @@ void ARtTraineePawn::ReleaseMenu()
 
 void ARtTraineePawn::SctInteract()
 {
-	if (IsPassthroughMode)
-	{
-		IsPassthroughMode = false;
-	}
-	else
-	{
-		IsPassthroughMode = true;
-	}
-
-	ActivePassthrough(IsPassthroughMode);
-
 	ARtGameScenarioController::Get(GetWorld())->Interact_AimTarget();
 
 	/*if (!WalkieTalkieActor || !WalkieTalkieMenuActor) return;
@@ -1916,7 +1915,8 @@ void ARtTraineePawn::OnLoadMapComplete()
 	{
 		FRtMCTTemplate mct = SceneManager->GetMctData();
 		FRtDeviceInfo Info = pState->Get_PlayerInfo();
-		pState->Change_ReadyMapLoad(true);
+		Info.CompleteMapLoad = true;
+		pState->Server_Change_ReadyState(Info);
 
 		FString role = Info.PlayerRoleID;
 
@@ -1926,7 +1926,7 @@ void ARtTraineePawn::OnLoadMapComplete()
 
 		if (pTemplate)
 		{
-			GetMainWidget()->SetSctText(TEXT("훈련 준비를 위해 화살표가 가리키는 곳으로 이동해주세요"), FColor::White);
+			GetMainWidget()->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtGoStartingPoint), FColor::White);
 
 			TObjectPtr<ARtStartAreaEffect> pEffect = Cast<ARtStartAreaEffect>(GetWorld()->SpawnActor<AActor>(LoadClass<AActor>(nullptr, RtBlueprintAsset::RtStartAreaEffect), pTemplate->TemplateLocation, pTemplate->TemplateRotation));
 
@@ -2037,6 +2037,40 @@ void ARtTraineePawn::NextCalibration()
 	else
 	{
 		UT_CalibrationInit();
+	}
+}
+
+void ARtTraineePawn::ActivePassthrough(bool passthorughOnOff)
+{
+	if (passthorughOnOff && !PlanerHandle.Valid)
+	{
+		PlanerHandle = UViveOpenXRPassthroughFunctionLibrary::CreatePassthroughUnderlay(
+			EXrPassthroughLayerForm::Planar,
+			true // 즉시 활성화
+		);
+
+		if (PlanerHandle.Valid)
+		{
+			UE_LOG(LogTemp, Log, TEXT("Passthrough Created (Planar)"));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to Create Passthrough"));
+		}
+	}
+	else if (!passthorughOnOff && PlanerHandle.Valid)
+	{
+		bool bDestroyed = UViveOpenXRPassthroughFunctionLibrary::DestroyPassthroughUnderlay(PlanerHandle);
+
+		if (bDestroyed)
+		{
+			PlanerHandle = FPassthroughHandle(); // 핸들 초기화
+			UE_LOG(LogTemp, Log, TEXT("Passthrough Destroyed"));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("Failed to Destroy Passthrough"));
+		}
 	}
 }
 
@@ -2305,7 +2339,7 @@ void ARtTraineePawn::ShowResultWidget()
 			ResultWidget->AttachToComponent(Camera, FAttachmentTransformRules::KeepRelativeTransform);
 
 			// 위치 조정: 플레이어 기준 앞쪽 + 위쪽
-			const FVector OffsetLocation = FVector(5.0f, 0.0f, 0.0f);
+			const FVector OffsetLocation = FVector(50.0f, 0.0f, 0.0f);
 			const FRotator OffsetRotation = FRotator(0.0f, 180.0f, 0.0f);
 
 			// Relative 위치 설정
@@ -2334,6 +2368,11 @@ void ARtTraineePawn::CloseResultWidget()
 	if (ShotHitDecal)
 	{
 		ShotHitDecal->SetVisibility(true);
+	}
+
+	if (IsVR)
+	{
+		ActivePassthrough(true);
 	}
 }
 
@@ -2417,62 +2456,6 @@ void ARtTraineePawn::ChangeAmmunitionMode()
 	{
 		mainWidget->SetAmmunitionType(AmmunitionMode);
 
-	}
-}
-
-void ARtTraineePawn::ActivePassthrough(bool passthorughOnOff)
-{
-	if (passthorughOnOff && !PlanerHandle.Valid)
-	{
-		PlanerHandle = UViveOpenXRPassthroughFunctionLibrary::CreatePassthroughUnderlay(
-			EXrPassthroughLayerForm::Planar,
-			true // 즉시 활성화
-		);
-
-		if (PlanerHandle.Valid)
-		{
-			UE_LOG(LogTemp, Log, TEXT("Passthrough Created (Planar)"));
-		}
-		else
-		{
-			UE_LOG(LogTemp, Error, TEXT("Failed to Create Passthrough"));
-		}
-	}
-	else if (!passthorughOnOff && PlanerHandle.Valid)
-	{
-		bool bDestroyed = UViveOpenXRPassthroughFunctionLibrary::DestroyPassthroughUnderlay(PlanerHandle);
-
-		if (bDestroyed)
-		{
-			PlanerHandle = FPassthroughHandle(); // 핸들 초기화
-			UE_LOG(LogTemp, Log, TEXT("Passthrough Destroyed"));
-		}
-		else
-		{
-			UE_LOG(LogTemp, Error, TEXT("Failed to Destroy Passthrough"));
-		}
-	}
-}
-
-void ARtTraineePawn::DeactivePassthrough()
-{
-	if (PlanerHandle.Valid)
-	{
-		bool bDestroyed = UViveOpenXRPassthroughFunctionLibrary::DestroyPassthroughUnderlay(PlanerHandle);
-
-		if (bDestroyed)
-		{
-			PlanerHandle = FPassthroughHandle(); // 핸들 초기화
-			UE_LOG(LogTemp, Log, TEXT("Passthrough Destroyed"));
-		}
-		else
-		{
-			UE_LOG(LogTemp, Error, TEXT("Failed to Destroy Passthrough"));
-		}
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("No valid passthrough to destroy."));
 	}
 }
 

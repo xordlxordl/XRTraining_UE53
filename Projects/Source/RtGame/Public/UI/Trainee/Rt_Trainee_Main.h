@@ -47,7 +47,7 @@ public:
 	void SetUsingTrackers(bool isUsing);
 
 	void UpdateRoleText();
-	void SetSctText(FString text, FSlateColor color);
+	void SetSctText(FString text, FSlateColor color = FLinearColor::White);
 	bool RemoveSctText();
 
 	bool HideMenuWidget();

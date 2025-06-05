@@ -58,7 +58,7 @@ void URtLoadingManager::LoadLevelWithLoadingScreen(FName LevelName, APlayerContr
 
 void URtLoadingManager::LoadLoadingPopup(APlayerController* InPC, FString InContens)
 {
-
+    //LoadingPopupStartTime = GetWorld()->GetTimeSeconds();
     LoadingPopupWidgetClass = LoadClass<UUserWidget>(nullptr, RtBlueprintAsset::LoadingPopupWidget);
 
     // Create and show the loading screen widget
@@ -101,9 +101,71 @@ void URtLoadingManager::OnLevelLoaded_TypePopup()
     // Remove the loading popup widget
     if (LoadingPopupWidget.Get())
     {
+        //bIsPopupVisible = false;
         isLoading = false;
         LoadingPopupWidget->RemoveFromParent();
     }
 }
+
+// dave
+void URtLoadingManager::LoadLoadingPopupDelayed(APlayerController* InPC, FString InContents)
+{
+    if (bIsPopupRequested || bIsPopupVisible)
+        return;
+
+    bIsPopupRequested = true;
+    PendingLoadingPopupStartTime = GetWorld()->GetTimeSeconds();
+
+    GetWorld()->GetTimerManager().SetTimer(
+        DelayedLoadingPopupTimerHandle,
+        FTimerDelegate::CreateLambda([this, InPC, InContents]()
+            {
+                bIsPopupRequested = false;
+
+                float Elapsed = GetWorld()->GetTimeSeconds() - PendingLoadingPopupStartTime;
+                if (Elapsed >= PopupDelayThreshold)
+                {
+                    LoadLoadingPopup(InPC, InContents);
+                    bIsPopupVisible = true;
+                }
+            }),
+        PopupDelayThreshold,
+        false
+    );
+}
+
+void URtLoadingManager::HideLoadingPopup()
+{
+    if (bIsPopupRequested)
+    {
+        GetWorld()->GetTimerManager().ClearTimer(DelayedLoadingPopupTimerHandle);
+        bIsPopupRequested = false;
+        return;
+    }
+
+    if (bIsPopupVisible)
+    {
+        OnLevelLoaded_TypePopup();
+    }
+}
+
+//void URtLoadingManager::HideLoadingPopup()
+//{
+//    if (!bIsPopupVisible)
+//        return;
+//
+//    float Elapsed = GetWorld()->GetTimeSeconds() - LoadingPopupStartTime;
+//    float RemainingTime = PopupDelayThreshold - Elapsed;
+//
+//    if (RemainingTime > 0.0f)
+//    {
+//        GetWorld()->GetTimerManager().SetTimer(DelayedLoadingPopupTimerHandle, this, URtLoadingManager::OnLevelLoaded_TypePopup, RemainingTime, false);
+//    }
+//    else
+//    {
+//        OnLevelLoaded_TypePopup();
+//        bIsPopupVisible = false;
+//    }
+//}
 
 

@@ -32,6 +32,7 @@ class USphereComponent;
 class ARtTraineePawn;
 class ARtPlayerState;
 class ARtGameState;
+class ARtPlayerController;
 
 struct FShotData
 {

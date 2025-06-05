@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+Ôªø// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "Common/RtBlueprintAssetPath.h"
@@ -24,7 +24,7 @@ namespace RtBlueprintAsset
 	const TCHAR* DirectionArrowMesh = TEXT("/Game/CommonModels/StaticModels/Icon_Arrow.Icon_Arrow");
 }
 
-// ∞¸¡¶ UI
+// Í¥ÄÏ†ú UI
 namespace RtControlWidgetBlueprint
 {
 	const TCHAR* ControlLoginWidget = TEXT("/Game/RS/Control/Widgets/WBP_RcLogin.WBP_RcLogin_C");
@@ -34,7 +34,7 @@ namespace RtControlWidgetBlueprint
 	const TCHAR* ControlAssignedBlock = TEXT("/Game/RS/Control/Widgets/Parts/Block/WBP_Trainee_Block20.WBP_Trainee_Block20_C");
 }
 
-// »∆∑√¿⁄ UI
+// ÌõàÎ†®Ïûê UI
 namespace RtTraineeWidgetBlueprint
 {
 	const TCHAR* RtWidgetActor = TEXT("/Game/Rs/Common/Blueprints/BP_RtWidgetActor.BP_RtWidgetActor_C");
@@ -57,4 +57,15 @@ namespace RtSctPath
 	const TCHAR* RtAnimationPath = TEXT("/Game/CommonModels/SkeletalModels/Animations/Character");
 	const TCHAR* RtAIControllerPath = TEXT("/Game/RS/Training/Blueprints/AI/BP_RtAIController.BP_RtAIController_C");
 	const TCHAR* RtTraineeLocActor = TEXT("/Game/RS/Training/Blueprints/TraineeLocActor.TraineeLocActor_C");
+}
+
+namespace RtSctDefaultTexts
+{
+	const TCHAR* RtGoStartingPoint = TEXT("GoStartingPoint");
+	const TCHAR* RtCheckTracker = TEXT("CheckTracker");
+	const TCHAR* RtCalibrationFailed = TEXT("CalibrationFailed");
+	const TCHAR* RtCalibrationComplete = TEXT("CalibrationComplete");
+	const TCHAR* RtCalibrationPose = TEXT("CalibrationPose");
+	const TCHAR* RtCalibrationPist = TEXT("CalibrationPist");
+	const TCHAR* RtCalibrationPrepare = TEXT("CalibrationPrepare");
 }

@@ -171,7 +171,7 @@ ARtScenarioControllerBase* ARtScenarioControllerBase::Get(UObject* worldContext)
 		FString key = TEXT("ScenarioController");
 
 		if (AActor* findActor = gam->ManagerMap.FindRef(key)) {
-			if( IsValid(findActor) )
+			if (IsValid(findActor) && findActor->IsA(ARtScenarioControllerBase::StaticClass()))
 				return Cast<ARtScenarioControllerBase>(findActor);
 		}
 		if (AActor* findActor = UGameplayStatics::GetActorOfClass(worldContext, ARtScenarioControllerBase::StaticClass())) {

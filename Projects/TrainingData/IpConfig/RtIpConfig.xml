@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <IpSetting>
   <!-- <ServerIp>192.168.10.18</ServerIp> -->
-  <!-- <ServerIp>192.168.0.212</ServerIp>
+  <!-- <ServerIp>192.168.0.12</ServerIp>
   <TCPSocketIp>192.168.0.20</TCPSocketIp>
   <UDPSocketIp>192.168.0.20</UDPSocketIp> -->
-  <ServerIp>192.168.0.34</ServerIp>
-  <TCPSocketIp>192.168.0.34</TCPSocketIp>
-  <UDPSocketIp>192.168.0.34</UDPSocketIp>
+  <ServerIp>192.168.0.12</ServerIp>
+  <TCPSocketIp>192.168.0.20</TCPSocketIp>
+  <UDPSocketIp>192.168.0.20</UDPSocketIp>
   <WebMainUrl>http://192.168.0.20/ARTS/main.aspx</WebMainUrl>
   <WebDownUrl>http://192.168.0.20/ARTS/download.aspx</WebDownUrl>
   <WebRepUpUrl>http://192.168.0.20/ARTS/upload_voice.aspx</WebRepUpUrl>

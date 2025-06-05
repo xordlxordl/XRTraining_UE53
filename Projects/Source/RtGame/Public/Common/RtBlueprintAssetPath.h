@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -48,9 +48,21 @@ namespace RtTraineeWidgetBlueprint
 	extern RTGAME_API const TCHAR* AmmunitionWidget;
 	extern RTGAME_API const TCHAR* TrineeResultWidget;
 }
+
 namespace RtSctPath
 {
 	extern RTGAME_API const TCHAR* RtAnimationPath;
 	extern RTGAME_API const TCHAR* RtAIControllerPath;
 	extern RTGAME_API const TCHAR* RtTraineeLocActor;
+}
+
+namespace RtSctDefaultTexts
+{
+	extern RTGAME_API const TCHAR* RtGoStartingPoint;
+	extern RTGAME_API const TCHAR* RtCheckTracker;
+	extern RTGAME_API const TCHAR* RtCalibrationFailed;
+	extern RTGAME_API const TCHAR* RtCalibrationComplete;
+	extern RTGAME_API const TCHAR* RtCalibrationPose;
+	extern RTGAME_API const TCHAR* RtCalibrationPist;
+	extern RTGAME_API const TCHAR* RtCalibrationPrepare;
 }

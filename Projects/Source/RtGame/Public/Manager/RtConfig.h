@@ -14,16 +14,16 @@
 RTGAME_API DECLARE_LOG_CATEGORY_EXTERN(LogRtConfig, Log, All);
 
 class URtWebManager;
-
+class FStringTable;
 /**
- * 
+ *
  */
 UCLASS()
 class RTGAME_API URtConfig : public UGameInstanceSubsystem
 {
 	GENERATED_BODY()
 
-// Various
+	// Various
 public:
 
 	static bool bMoveUsingHmdController;// true : Move using hmd controller
@@ -35,54 +35,54 @@ public:
 	static FString Lobby_MapName;     // Server
 	static FString Game_MapName;
 	static FString Replay_MapName;
-    static FString Device_Name;
+	static FString Device_Name;
 	static int32 Device_Index;
 
-   static FString Custom_MapName;  // Map Name from JSON File
+	static FString Custom_MapName;  // Map Name from JSON File
 
 
-   // Url
-   static FString ListenUrl;
-   static FString WebServerUrl;
-   static FString WebScenarioUrl;
-   static FString WebReplayUploadUrl;
-   static FString WebReplayDownloadUrl;
-   static FString WebLogUrl;
+	// Url
+	static FString ListenUrl;
+	static FString WebServerUrl;
+	static FString WebScenarioUrl;
+	static FString WebReplayUploadUrl;
+	static FString WebReplayDownloadUrl;
+	static FString WebLogUrl;
 
-   // Socket
-   static FString TCPSocketIP;
-   static FString UDPSocketIP;
-   static int32 TCPPort;
-   static int32 UDPPort;
-   static int32 UDPRecvPort;
-   static bool UsingVoice;
-   static bool VoiceTalk; 
+	// Socket
+	static FString TCPSocketIP;
+	static FString UDPSocketIP;
+	static int32 TCPPort;
+	static int32 UDPPort;
+	static int32 UDPRecvPort;
+	static bool UsingVoice;
+	static bool VoiceTalk;
 
-   // for 10->20
-   static int32 PlayerNum;
+	// for 10->20
+	static int32 PlayerNum;
 
-   // stringtable
-   static FString MessageBoxPath;
-   static FString ControlMainPath;
-   static FString ErrorMsgPath;
-   static FString ResultDetailPath;
+	// stringtable
+	static FString MessageBoxPath;
+	static FString ControlMainPath;
+	static FString ErrorMsgPath;
+	static FString ResultDetailPath;
 
-   // nation
-   static int32 NationCode;
-   // Conne
-   static int32 NumPublicConnections;
+	// nation
+	static int32 NationCode;
+	// Conne
+	static int32 NumPublicConnections;
 protected:
-   static FString RtSettingsFile;
+	static FString RtSettingsFile;
 
 
-// Functions
+	// Functions
 public:
-    // Server
+	// Server
 	static const FName& Get_ServerLevel();
 
 	// PlayerSetting
 	static FRtPlaySettings Play_Settings;
-	
+
 	static struct FRtTrainingOptions
 	{
 	public:
@@ -95,7 +95,7 @@ public:
 		int32 WeaponTrackerMode = 0; // Tracker(0), LeftController(1), RightController(2)
 		UPROPERTY(EditAnywhere, BlueprintReadOnly)
 		bool IsUsingMotion = true; // UsingMotionCature(1), NotMotionCapture(0)
-		
+
 		// VR Trainee Safety
 		UPROPERTY(EditAnywhere, BlueprintReadOnly)
 		int32 MapSizeX = 30;
@@ -124,7 +124,7 @@ public:
 	// XMl Load
 	static FString Get_IpSettingsFileUrl();
 	static FString Get_TrainingOptionsFileUrl();
-    // 제거예정
+	// 제거예정
 	//static FString Get_PlaySettingsFileUrl();
 	//static FString Get_DevicesFileUrl();
 
@@ -134,9 +134,10 @@ public:
 	static bool Load_IpSettings();
 	static bool Load_TrainingOptions();
 
-// Get 
+	// Get 
 	UFUNCTION(BlueprintCallable)
-	FString GetDeviceName() { 
+	FString GetDeviceName()
+	{
 #if WITH_EDITOR
 		FWorldContext* context = GEngine->GetWorldContextFromWorld(this->GetWorld());
 		if (context)
@@ -147,7 +148,7 @@ public:
 			return FString::Printf(TEXT("VR-%02d"), num + context->PIEInstance);
 		}
 #endif
-		return Device_Name; 
+		return Device_Name;
 	}
 
 	UFUNCTION(BlueprintCallable)
@@ -155,10 +156,10 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	int32 GetNationCode() { return NationCode; }
-	
+
 	UFUNCTION(BlueprintPure)
 	FVector GetAlertDistance_Wall() { return FVector(TrainingOptions.MapSizeX, TrainingOptions.MapSizeY, TrainingOptions.AlertDistance_Wall); } // MapSizeX, MapSizeY, AlertDistance_Wall
-	
+
 	UFUNCTION(BlueprintPure)
 	float GetAlertDistance_HMD() { return TrainingOptions.AlertDistance_HMD; } // MapSizeX, MapSizeY, AlertDistance_Wall
 
@@ -171,7 +172,11 @@ protected:
 	void Setting_From_InitFile(const FString& InIni, bool InUseDefaultVaule);
 	void Setting_From_InitFile();
 	static void Setting_From_xmlFile(const FString& TempTag, const FString& TempString);
-	
+
 	void UpdateTraineeStringTable();
 
+public:
+	static FString GetStringAtTraineeST(const FString& key); //테이블화 된 텍스트 값 찾아고는 함수
+protected:
+	TObjectPtr<FStringTable> TraineeStringTable;
 };

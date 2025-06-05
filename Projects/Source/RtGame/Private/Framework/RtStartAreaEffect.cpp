@@ -10,6 +10,8 @@
 
 #include "Components/SplineComponent.h"
 #include "UI/Trainee/Rt_Trainee_Main.h"
+#include "Manager/RtConfig.h"
+#include "Common/RtBlueprintAssetPath.h"
 
 // Sets default values
 ARtStartAreaEffect::ARtStartAreaEffect(const FObjectInitializer& ObjectInitializer)
@@ -66,7 +68,7 @@ void ARtStartAreaEffect::OnStartTraining(bool isStart)
 {
 	ARtGameScenarioController* pController = ARtGameScenarioController::Get(this);
 	
-	player->GetMainWidget()->RemoveSctText();
+	
 
 	if (pController && pController->SetSctGamePlay.IsAlreadyBound(this, &ARtStartAreaEffect::OnStartTraining))
 		pController->SetSctGamePlay.RemoveDynamic(this, &ARtStartAreaEffect::OnStartTraining);
@@ -99,6 +101,15 @@ void ARtStartAreaEffect::Check_Area()
 		{
 			OnChangeInPlayer(result);
 			pState->Change_ReadyStartingPoint(result);
+
+			URt_Trainee_Main* pWidget = player->GetMainWidget();
+
+			if (!pWidget)
+				return;
+			if (result)
+				pWidget->RemoveSctText();
+			else
+				pWidget->SetSctText(URtConfig::GetStringAtTraineeST(RtSctDefaultTexts::RtGoStartingPoint));
 		}
 	}
 }

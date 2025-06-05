@@ -550,7 +550,10 @@ URtTableManager* URtGameManager::Get_TableManager()
 	return GetGameInstance()->GetSubsystem<URtTableManager>();
 }
 
-
+URtReplayManager* URtGameManager::Get_ReplayManager()
+{
+	return GetGameInstance()->GetSubsystem<URtReplayManager>();
+}
 
 void URtGameManager::Save_PlayerData(const FRtPlayerSaveData& player_data)
 {

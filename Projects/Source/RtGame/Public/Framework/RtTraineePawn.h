@@ -18,6 +18,7 @@
 #include "VoiceModule.h"
 #include "Voice.h"
 
+// Passthrough
 #include "ViveOpenXRPassthroughFunctionLibrary.h"
 
 #include "RtTraineePawn.generated.h"
@@ -446,6 +447,15 @@ private:
 
 #pragma endregion Widgets
 
+#pragma region VR Passthrough
+public:
+	void ActivePassthrough(bool passthorughOnOff);
+
+private:
+	bool IsPassthroughMode = false;
+	FPassthroughHandle PlanerHandle;
+#pragma endregion VR Passthrough
+
 	// Danger Alert
 private:
 	void UpdateDangerLevel();
@@ -499,14 +509,4 @@ public:
 protected:
 	void ChangeAmmunitionMode();
 	bool AmmunitionMode = false; // false: blank ammunition(°øÆ÷Åº), true: live ammunition(½ÇÅº). ½ÇÅº Á¾·ùµµ ¿©·¯ °³·Î ¹Ù²ð ¼ö ÀÖÀ½..
-
-public:
-	void ActivePassthrough(bool passthorughOnOff);
-	void DeactivePassthrough();
-
-private:
-	FPassthroughHandle PlanerHandle;
-	bool IsPassthroughMode = false;
-
-	AActor* SkySphereActor;
 };

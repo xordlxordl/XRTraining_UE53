@@ -21,6 +21,8 @@
 #include "Internationalization/StringTableCore.h"
 #include "Internationalization/StringTableRegistry.h"
 
+#include "Components/WidgetComponent.h"
+
 ARtWidgetActor_TraineeResult::ARtWidgetActor_TraineeResult()
 {
     PrimaryActorTick.bCanEverTick = false;
@@ -30,7 +32,7 @@ ARtWidgetActor_TraineeResult::ARtWidgetActor_TraineeResult()
 
     WidgetComponent->SetWidgetSpace(EWidgetSpace::World);
     WidgetComponent->SetDrawSize(FVector2D(500.f, 300.f));
-    WidgetComponent->SetRelativeScale3D(FVector(0.01f));
+    WidgetComponent->SetRelativeScale3D(FVector(0.1f));
     WidgetComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     WidgetComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
 

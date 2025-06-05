@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 
-
+#include "Manager/RtReplayManager.h"
 
 //Data 
 #include "RtCore/Public/Common/RtCommon.h"
@@ -24,8 +24,8 @@ RTGAME_API DECLARE_LOG_CATEGORY_EXTERN(LogGameManager, Log, All);
 class ARtPlayerController;
 class ARtPlayerState;
 class URtTrainingManager;
-class URtReplayManager;
 class ARtGameState;
+class URtReplayManager;
 
 // Manager
 class URtTableManager;

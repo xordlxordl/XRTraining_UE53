@@ -330,7 +330,7 @@ void URtConfig::UpdateTraineeStringTable()
 		return;
 
 	FStringTableConstPtr TargetTable = FStringTableRegistry::Get().FindStringTable(TRAINEE_STRINGTABLE_PATH);
-	FStringTable* MutableTargetTable = const_cast<FStringTable*>(TargetTable.Get());
+	FStringTable* MutableTargetTable = TraineeStringTable = const_cast<FStringTable*>(TargetTable.Get());
 
 	if (MutableTargetTable == nullptr)
 		return;
@@ -357,7 +357,21 @@ void URtConfig::UpdateTraineeStringTable()
 	}
 
 	UE_LOG(LogTemp, Log, TEXT("String Table Updated Successfully"));
+}
 
+FString URtConfig::GetStringAtTraineeST(const FString& key)
+{
+	URtConfig* config = GWorld->GetGameInstance()->GetSubsystem<URtConfig>();
+	if(!config)
+		return FString();
+
+	if(!config->TraineeStringTable)
+		return FString();
+
+	FString find;
+	config->TraineeStringTable->GetSourceString(key, find);
+	
+	return find;
 }
 
 void URtConfig::NationCode_Parse(const int32 nationcode)

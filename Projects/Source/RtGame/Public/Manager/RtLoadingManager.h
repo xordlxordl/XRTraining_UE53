@@ -8,13 +8,13 @@
 #include "RtLoadingManager.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class RTGAME_API URtLoadingManager : public UGameInstanceSubsystem
 {
-	GENERATED_BODY()
-	
+    GENERATED_BODY()
+
 public:
     DECLARE_MULTICAST_DELEGATE(FLoadingFinished);
     static FLoadingFinished Update_OnLoadingFinished_Delegate;
@@ -28,7 +28,12 @@ public:
     UFUNCTION(BlueprintCallable)
     void OnLevelLoaded_TypePopup();
 
-private:    
+    UFUNCTION(BlueprintCallable)
+    void LoadLoadingPopupDelayed(APlayerController* InPC, FString InContents);
+    UFUNCTION(BlueprintCallable)
+    void HideLoadingPopup();
+
+private:
     UPROPERTY(EditAnywhere)
     TSubclassOf<UUserWidget> LoadingScreenWidgetClass;
 
@@ -41,9 +46,18 @@ private:
     UPROPERTY(EditAnywhere)
     TObjectPtr<UUserWidget> LoadingPopupWidget;
 
+    FTimerHandle DelayedLoadingPopupTimerHandle;
 
     bool isLoading = false;
+    bool bIsPopupRequested = false;
+    bool bIsPopupVisible = false;
+
+    float PopupDelayThreshold = 0.2f;
+    float PendingLoadingPopupStartTime = 0.0f;
+    float LoadingPopupStartTime = 0.0f;
 
     virtual void Initialize(FSubsystemCollectionBase& Collection) override;
     virtual void Deinitialize() override;
+
+    //void HideLoadingPopup();
 };

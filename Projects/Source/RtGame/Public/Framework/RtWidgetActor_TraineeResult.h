@@ -4,7 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+
 #include "RtWidgetActor_TraineeResult.generated.h"
+
+class UWidgetComponent;
 
 UCLASS()
 class RTGAME_API ARtWidgetActor_TraineeResult : public AActor
