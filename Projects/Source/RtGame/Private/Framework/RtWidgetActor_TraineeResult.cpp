@@ -35,6 +35,7 @@ ARtWidgetActor_TraineeResult::ARtWidgetActor_TraineeResult()
     WidgetComponent->SetRelativeScale3D(FVector(0.1f));
     WidgetComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     WidgetComponent->SetCollisionResponseToAllChannels(ECR_Ignore);
+	WidgetComponent->SetCastShadow(false);
 
     SetActorEnableCollision(false);
 }

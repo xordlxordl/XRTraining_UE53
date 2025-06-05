@@ -107,7 +107,7 @@ void URtLoadingManager::OnLevelLoaded_TypePopup()
     }
 }
 
-// dave
+// dave - delayed loading
 void URtLoadingManager::LoadLoadingPopupDelayed(APlayerController* InPC, FString InContents)
 {
     if (bIsPopupRequested || bIsPopupVisible)
@@ -134,6 +134,7 @@ void URtLoadingManager::LoadLoadingPopupDelayed(APlayerController* InPC, FString
     );
 }
 
+// dave - Request the hide popup
 void URtLoadingManager::HideLoadingPopup()
 {
     if (bIsPopupRequested)
@@ -148,24 +149,3 @@ void URtLoadingManager::HideLoadingPopup()
         OnLevelLoaded_TypePopup();
     }
 }
-
-//void URtLoadingManager::HideLoadingPopup()
-//{
-//    if (!bIsPopupVisible)
-//        return;
-//
-//    float Elapsed = GetWorld()->GetTimeSeconds() - LoadingPopupStartTime;
-//    float RemainingTime = PopupDelayThreshold - Elapsed;
-//
-//    if (RemainingTime > 0.0f)
-//    {
-//        GetWorld()->GetTimerManager().SetTimer(DelayedLoadingPopupTimerHandle, this, URtLoadingManager::OnLevelLoaded_TypePopup, RemainingTime, false);
-//    }
-//    else
-//    {
-//        OnLevelLoaded_TypePopup();
-//        bIsPopupVisible = false;
-//    }
-//}
-
-

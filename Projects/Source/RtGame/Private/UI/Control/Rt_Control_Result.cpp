@@ -189,7 +189,9 @@ void URt_Control_Result::OnClicked_TraineeListItem(UObject* InObject)
 	// recv 가 걸릴 때 까지 로딩 popup 을 열어줘야 함
 	if (auto* gi = GetGameInstance()) {
 		if (auto* lm = gi->GetSubsystem<URtLoadingManager>()) {
-			//!lm->LoadLoadingPopup(Get_PlayerController(), "GetResult");
+			//lm->LoadLoadingPopup(Get_PlayerController(), "GetResult");
+
+			// dave - prevent flickerring
 			lm->LoadLoadingPopupDelayed(Get_PlayerController(), "GetResult");
 		}
 	}
@@ -200,7 +202,9 @@ void URt_Control_Result::Update_DetialBox(const FResponse_TrngSimpleResult& inre
 	// popup close
 	if (auto* gi = GetGameInstance()) {
 		if (auto* lm = gi->GetSubsystem<URtLoadingManager>()) {
-			//!lm->OnLevelLoaded_TypePopup();
+			//lm->OnLevelLoaded_TypePopup();
+
+			// dave - prevent flickerring
 			lm->HideLoadingPopup();
 		}
 	}
