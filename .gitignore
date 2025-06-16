@@ -1,3 +1,6 @@
 .svn
-DerivedDataCache
-Intermediate
+**/DerivedDataCache/
+**/Intermediate/
+**/obj/
+**/debug/
+**/release/
